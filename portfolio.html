@@ -1,0 +1,596 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Yijing Wu - Portfolio</title>
+
+  <script src="https://kit.fontawesome.com/a2c653daa5.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/portfolio_style.css">
+</head>
+<body>
+  <div class="page-wrapper">
+
+    <!-- Header -->
+ <!-- Header -->
+    <header class="site-header">
+      <div class="logo">
+        <a href="index.html">
+          <span class="lang en">Yijing Wu</span>
+          <span class="lang zh">吴依婧</span>
+        </a>
+      </div>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        ☰
+      </button>
+
+      <nav class="site-nav" id="siteNav">
+        <a href="index.html">
+          <span class="lang en">Home</span>
+          <span class="lang zh">首页</span>
+        </a>
+        <a href="cv.html">
+          <span class="lang en">CV</span>
+          <span class="lang zh">简历</span>
+        </a>
+        <a href="portfolio.html">
+          <span class="lang en">Portfolio</span>
+          <span class="lang zh">作品集</span>
+        </a>
+        <a href="research.html">
+          <span class="lang en">Academic Research</span>
+          <span class="lang zh">学术研究</span>
+        </a>
+        <a href="photography.html">
+          <span class="lang en">Photography</span>
+          <span class="lang zh">摄影作品</span>
+        </a>
+
+        <button id="lang-toggle" class="lang-btn" type="button">中文</button>
+      </nav>
+    </header>
+
+
+  <!-- Hero -->
+    <section class="portfolio-hero">
+      <h1>
+        <span class="lang en">Portfolio</span>
+        <span class="lang zh">作品集</span>
+      </h1>
+      <p>
+        <span class="lang en">
+          A selection of my projects in web design, creative coding, branding, and visual design.
+        </span>
+        <span class="lang zh">
+          这里展示了我在网页设计、创意编程、品牌设计与视觉设计方面的部分项目作品。
+        </span>
+      </p>
+    </section>
+
+    <!-- Filters -->
+    <div class="portfolio-filters">
+      <button class="filter-btn active" data-filter="all">
+        <span class="lang en">All</span>
+        <span class="lang zh">全部</span>
+      </button>
+
+      <button class="filter-btn" data-filter="web">
+        <span class="lang en">Web / UX Design</span>
+        <span class="lang zh">网页 / 用户体验设计</span>
+      </button>
+
+      <button class="filter-btn" data-filter="interactive">
+        <span class="lang en">Creative Coding / Interactive</span>
+        <span class="lang zh">创意编程 / 互动设计</span>
+      </button>
+
+      <button class="filter-btn" data-filter="branding">
+        <span class="lang en">Branding & Marketing</span>
+        <span class="lang zh">品牌与营销</span>
+      </button>
+
+      <button class="filter-btn" data-filter="editorial">
+        <span class="lang en">Editorial / Visual Design</span>
+        <span class="lang zh">排版 / 视觉设计</span>
+      </button>
+    </div>
+
+ <!-- Portfolio Section -->
+<section class="portfolio-section">
+  <div class="project-grid">
+
+    <!-- Web / UX (4个) -->
+    <article class="project-card portfolio-item web">
+      <img src="images/personal web_cover.jpg" alt="Personal Website project">
+      <div class="project-info">
+        <span class="project-category">
+          <span class="lang en">Web / UX Design</span>
+          <span class="lang zh">网页 / 用户体验设计</span>
+        </span>
+        <h3>
+          <span class="lang en">Personal Website</span>
+          <span class="lang zh">个人网站</span>
+        </h3>
+        <p>
+          <span class="lang en">
+            A responsive personal website showcasing my CV, projects, and design works.
+          </span>
+          <span class="lang zh">
+            一个展示个人简历、项目与设计作品的响应式网站。
+          </span>
+        </p>
+        <a href="personal web.html" class="project-link">
+          <span class="lang en">See Details</span>
+          <span class="lang zh">查看详情</span>
+        </a>
+      </div>
+    </article>
+
+    <article class="project-card portfolio-item web">
+      <img src="images/feature-web.jpg" alt="Travel Website project">
+      <div class="project-info">
+        <span class="project-category">
+          <span class="lang en">Web / UX Design</span>
+          <span class="lang zh">网页 / 用户体验设计</span>
+        </span>
+        <h3>
+          <span class="lang en">Global Travel Website</span>
+          <span class="lang zh">环球旅游网站</span>
+        </h3>
+        <p>
+          <span class="lang en">
+            A travel guide platform providing destination exploration, travel tips, and visual inspiration.
+          </span>
+          <span class="lang zh">
+            一个提供目的地探索、旅行攻略与视觉内容的旅游网站。
+          </span>
+        </p>
+        <a href="travel.html" class="project-link">
+          <span class="lang en">See Details</span>
+          <span class="lang zh">查看详情</span>
+        </a>
+      </div>
+    </article>
+<!-- =========================
+    <article class="project-card portfolio-item web">
+      <img src="images/project3.jpg" alt="Personal Website v2">
+      <div class="project-info">
+        <span class="project-category">
+          <span class="lang en">Web / UX Design</span>
+          <span class="lang zh">网页 / 用户体验设计</span>
+        </span>
+        <h3>
+          <span class="lang en">Personal Website (Version 2)</span>
+          <span class="lang zh">个人网站优化版本</span>
+        </h3>
+        <p>
+          <span class="lang en">
+            An updated version focusing on improved layout, interaction, and visual hierarchy.
+          </span>
+          <span class="lang zh">
+            一个优化版本，提升了版式结构、交互体验与视觉层级。
+          </span>
+        </p>
+        <a href="Tourmap.html" class="project-link">
+          <span class="lang en">See Details</span>
+          <span class="lang zh">查看详情</span>
+        </a>
+      </div>
+    </article>
+
+========================= -->
+    <article class="project-card portfolio-item web">
+      <img src="images/project4.jpg" alt="TourMap App UX">
+      <div class="project-info">
+        <span class="project-category">
+          <span class="lang en">Web / UX Design</span>
+          <span class="lang zh">网页 / 用户体验设计</span>
+        </span>
+        <h3>
+          <span class="lang en">TourMap App UX Design</span>
+          <span class="lang zh">TourMap 应用 UX 设计</span>
+        </h3>
+        <p>
+          <span class="lang en">
+            A GPS-based cultural tourism app that helps users explore historical landmarks, museums, and local stories through location-based experiences and interactive content.
+          </span>
+          <span class="lang zh">
+            一款基于 GPS 的文化旅游应用，通过位置服务和互动内容帮助用户探索历史地标、博物馆与当地文化故事。
+          </span>
+        </p>
+        <a href="Tourmap.html" class="project-link">
+          <span class="lang en">See Details</span>
+          <span class="lang zh">查看详情</span>
+        </a>
+      </div>
+    </article>
+
+
+    <!-- Creative Coding (3个) -->
+    <article class="project-card portfolio-item interactive">
+      <img src="images/firework_cover.jpg" alt="Firework project">
+      <div class="project-info">
+        <span class="project-category">
+          <span class="lang en">Creative Coding / Interactive</span>
+          <span class="lang zh">创意编程 / 互动设计</span>
+        </span>
+        <h3>
+          <span class="lang en">Interactive Firework Project</span>
+          <span class="lang zh">烟花互动项目</span>
+        </h3>
+        <p>
+          <span class="lang en">
+            A visual interactive project using creative coding to simulate dynamic fireworks.
+          </span>
+          <span class="lang zh">
+            一个使用创意编程实现动态烟花效果的互动项目。
+          </span>
+        </p>
+        <a href="firework.html" class="project-link">
+          <span class="lang en">See Details</span>
+          <span class="lang zh">查看详情</span>
+        </a>
+      </div>
+    </article>
+
+    <article class="project-card portfolio-item interactive">
+      <img src="images/momo_cover.jpg" alt="Momo project">
+      <div class="project-info">
+        <span class="project-category">
+          <span class="lang en">Creative Coding / Interactive</span>
+          <span class="lang zh">创意编程 / 互动设计</span>
+        </span>
+        <h3>
+          <span class="lang en">Momo Virtual Pet</span>
+          <span class="lang zh">Momo 虚拟宠物</span>
+        </h3>
+        <p>
+          <span class="lang en">
+            An interactive pet simulator where users engage with a digital character through actions.
+          </span>
+          <span class="lang zh">
+            一个通过用户操作与虚拟角色互动的宠物模拟项目。
+          </span>
+        </p>
+        <a href="momo.html" class="project-link">
+          <span class="lang en">See Details</span>
+          <span class="lang zh">查看详情</span>
+        </a>
+      </div>
+    </article>
+<!-- =========================
+    <article class="project-card portfolio-item interactive">
+      <img src="images/project7.jpg" alt="GDP Chart">
+      <div class="project-info">
+        <span class="project-category">
+          <span class="lang en">Creative Coding / Interactive</span>
+          <span class="lang zh">创意编程 / 互动设计</span>
+        </span>
+        <h3>
+          <span class="lang en">GDP Data Visualization</span>
+          <span class="lang zh">GDP 数据可视化</span>
+        </h3>
+        <p>
+          <span class="lang en">
+            An interactive chart visualizing GDP trends with dynamic data and user interaction.
+          </span>
+          <span class="lang zh">
+            一个展示GDP变化趋势的互动数据可视化项目。
+          </span>
+        </p>
+        <a href="#" class="project-link">
+          <span class="lang en">See Details</span>
+          <span class="lang zh">查看详情</span>
+        </a>
+      </div>
+    </article>
+========================= -->
+
+    <!-- Branding (3个) -->
+    <article class="project-card portfolio-item branding">
+      <img src="images/project8.jpg" alt="Cuppia">
+      <div class="project-info">
+        <span class="project-category">
+          <span class="lang en">Branding & Marketing</span>
+          <span class="lang zh">品牌与营销</span>
+        </span>
+        <h3>
+          <span class="lang en">Cuppia Campaign</span>
+          <span class="lang zh">Cuppia 品牌营销</span>
+        </h3>
+        <p>
+          <span class="lang en">
+            A seasonal marketing campaign including branding, visuals, and social media strategy.
+          </span>
+          <span class="lang zh">
+            一个包含品牌视觉与社交媒体策略的营销企划项目。
+          </span>
+        </p>
+        <a href="cuppia.html" class="project-link">
+          <span class="lang en">See Details</span>
+          <span class="lang zh">查看详情</span>
+        </a>
+      </div>
+    </article>
+<!-- =========================
+    <article class="project-card portfolio-item branding">
+      <img src="images/project9.jpg" alt="Cansi">
+      <div class="project-info">
+        <span class="project-category">
+          <span class="lang en">Branding & Marketing</span>
+          <span class="lang zh">品牌与营销</span>
+        </span>
+        <h3>
+          <span class="lang en">Cansi Global Branding</span>
+          <span class="lang zh">Cansi 品牌设计</span>
+        </h3>
+        <p>
+          <span class="lang en">
+            A corporate branding project including website design and marketing materials.
+          </span>
+          <span class="lang zh">
+            一个包含网站设计与宣传内容的企业品牌项目。
+          </span>
+        </p>
+        <a href="#" class="project-link">
+          <span class="lang en">See Details</span>
+          <span class="lang zh">查看详情</span>
+        </a>
+      </div>
+    </article>
+
+    <article class="project-card portfolio-item branding">
+      <img src="images/project10.jpg" alt="Orbi">
+      <div class="project-info">
+        <span class="project-category">
+          <span class="lang en">Branding & Marketing</span>
+          <span class="lang zh">品牌与营销</span>
+        </span>
+        <h3>
+          <span class="lang en">Orbi Pet Brand</span>
+          <span class="lang zh">Orbi 宠物品牌</span>
+        </h3>
+        <p>
+          <span class="lang en">
+            A premium pet brand concept focusing on product design and brand identity.
+          </span>
+          <span class="lang zh">
+            一个以产品设计与品牌定位为核心的宠物品牌项目。
+          </span>
+        </p>
+        <a href="#" class="project-link">
+          <span class="lang en">See Details</span>
+          <span class="lang zh">查看详情</span>
+        </a>
+      </div>
+    </article>
+
+========================= -->
+    <!-- Visual Design (5个) -->
+    <article class="project-card portfolio-item editorial">
+      <img src="images/project11.jpg" alt="Travel Ebook">
+      <div class="project-info">
+        <span class="project-category">
+          <span class="lang en">Editorial / Visual Design</span>
+          <span class="lang zh">排版 / 视觉设计</span>
+        </span>
+        <h3>
+          <span class="lang en">Travel Book</span>
+          <span class="lang zh">旅行电子书</span>
+        </h3>
+        <p>
+          <span class="lang en">
+            An editorial design project focusing on layout and visual storytelling.
+          </span>
+          <span class="lang zh">
+            一个以版式设计与视觉叙事为核心的电子书项目。
+          </span>
+        </p>
+        <a href="travel book.html" class="project-link">
+          <span class="lang en">See Details</span>
+          <span class="lang zh">查看详情</span>
+        </a>
+      </div>
+    </article>
+
+    <article class="project-card portfolio-item editorial">
+      <img src="images/project12.jpg" alt="Iceland Ebook">
+      <div class="project-info">
+        <span class="project-category">
+          <span class="lang en">Editorial / Visual Design</span>
+          <span class="lang zh">排版 / 视觉设计</span>
+        </span>
+        <h3>
+          <span class="lang en">Iceland: Fire, Ice, and Life</span>
+          <span class="lang zh">冰岛电子书</span>
+        </h3>
+        <p>
+          <span class="lang en">
+            An interactive eBook combining multimedia elements and structured layout design.
+          </span>
+          <span class="lang zh">
+            一个融合多媒体内容与版式设计的互动电子书项目。
+          </span>
+        </p>
+        <a href="iceland.html" class="project-link">
+          <span class="lang en">See Details</span>
+          <span class="lang zh">查看详情</span>
+        </a>
+      </div>
+    </article>
+
+    <article class="project-card portfolio-item editorial">
+      <img src="images/project13.jpg" alt="Flower Poster">
+      <div class="project-info">
+        <span class="project-category">
+          <span class="lang en">Editorial / Visual Design</span>
+          <span class="lang zh">排版 / 视觉设计</span>
+        </span>
+        <h3>
+          <span class="lang en">Flower Shop Poster</span>
+          <span class="lang zh">花店海报设计</span>
+        </h3>
+        <p>
+          <span class="lang en">
+            A poster design project focusing on typography and visual aesthetics.
+          </span>
+          <span class="lang zh">
+            一个以字体设计与视觉表现为核心的海报项目。
+          </span>
+        </p>
+        <a href="flower shop.html" class="project-link">
+          <span class="lang en">See Details</span>
+          <span class="lang zh">查看详情</span>
+        </a>
+      </div>
+    </article>
+
+
+    <article class="project-card portfolio-item editorial">
+      <img src="images/project15.jpg" alt="Environment Poster">
+      <div class="project-info">
+        <span class="project-category">
+          <span class="lang en">Editorial / Visual Design</span>
+          <span class="lang zh">排版 / 视觉设计</span>
+        </span>
+        <h3>
+          <span class="lang en">Environmental Poster</span>
+          <span class="lang zh">环保主题海报</span>
+        </h3>
+        <p>
+          <span class="lang en">
+            A visual campaign poster promoting environmental awareness.
+          </span>
+          <span class="lang zh">
+            一个以环境保护为主题的视觉传播项目。
+          </span>
+        </p>
+        <a href="environmental poster.html" class="project-link">
+          <span class="lang en">See Details</span>
+          <span class="lang zh">查看详情</span>
+        </a>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+    <!-- Footer -->
+ <footer class="site-footer" id="contact">
+  <div class="footer-container">
+
+    <!-- 左 -->
+    <div class="footer-left">
+      <h3>
+  <span class="lang en">Yijing Wu</span>
+  <span class="lang zh">吴依婧</span>
+</h3>
+      <p>
+  <span class="lang en">
+    Digital Marketing & UI/UX Designer focused on creating
+    meaningful digital experiences.
+  </span>
+  <span class="lang zh">
+    专注于打造有意义数字体验的数字营销与 UI/UX 设计师。
+  </span>
+</p>
+    </div>
+
+    <!-- 中 -->
+    <div class="footer-center">
+        <a href="index.html">
+          <span class="lang en">Home</span>
+          <span class="lang zh">首页</span>
+        </a>
+         <a href="cv.html">
+            <span class="lang en">CV</span>
+            <span class="lang zh">简历</span>
+          </a>
+        <a href="portfolio.html">
+            <span class="lang en">Portfolio</span>
+            <span class="lang zh">作品集</span>
+          </a>
+        <a href="research">
+            <span class="lang en">Academic Research</span>
+            <span class="lang zh">学术研究</span>
+        </a>
+        <a href="photography.html">
+    <span class="lang en">Photography</span>
+    <span class="lang zh">摄影作品</span>
+  </a>
+    </div>
+
+    <!-- 右 -->
+    <div class="footer-right">
+      <p>Email: <a href="mailto:wuyijing517a@gmail.com">wuyijing517a@gmail.com</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/yijing-wu-2368a92bb" target="_blank">linkedin.com/in/yijing-wu-2368a92bb</a></p>
+      <p>Phone No.: 
+        <a href="tel:+85263675546">+852 6367 5546</a> | 
+        <a href="tel:+8613394053233">+86 133 9405 3233</a>
+      </p>
+
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 Yijing Wu. All Rights Reserved.</p>
+  </div>
+</footer>
+
+  </div>
+
+  <script>
+  const navToggle = document.getElementById("navToggle");
+  const siteNav = document.getElementById("siteNav");
+  const toggleBtn = document.getElementById("lang-toggle");
+
+  navToggle.addEventListener("click", () => {
+    siteNav.classList.toggle("active");
+  });
+
+  function setLanguage(lang) {
+    if (lang === "zh") {
+      document.body.classList.add("zh-mode");
+      toggleBtn.textContent = "EN";
+      document.documentElement.lang = "zh-CN";
+      localStorage.setItem("language", "zh");
+    } else {
+      document.body.classList.remove("zh-mode");
+      toggleBtn.textContent = "中文";
+      document.documentElement.lang = "en";
+      localStorage.setItem("language", "en");
+    }
+  }
+
+  const savedLang = localStorage.getItem("language") || "en";
+  setLanguage(savedLang);
+
+  toggleBtn.addEventListener("click", () => {
+    const currentLang = document.body.classList.contains("zh-mode") ? "zh" : "en";
+    setLanguage(currentLang === "zh" ? "en" : "zh");
+  });
+
+  const filterButtons = document.querySelectorAll(".filter-btn");
+  const portfolioItems = document.querySelectorAll(".portfolio-item");
+
+  filterButtons.forEach(button => {
+    button.addEventListener("click", () => {
+      const filterValue = button.dataset.filter;
+
+      filterButtons.forEach(btn => btn.classList.remove("active"));
+      button.classList.add("active");
+
+      portfolioItems.forEach(item => {
+        if (filterValue === "all" || item.classList.contains(filterValue)) {
+          item.style.display = "";
+        } else {
+          item.style.display = "none";
+        }
+      });
+    });
+  });
+</script>
+</body>
+</html>

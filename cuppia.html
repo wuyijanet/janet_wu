@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yijing Wu | Cuppia Campaign</title>
+  <link rel="stylesheet" href="css/cuppia_style.css" />
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  />
+</head>
+<body>
+  <div class="page-wrapper">
+
+    <!-- Header -->
+    <header class="site-header">
+      <div class="logo">
+        <a href="index.html">
+          <span class="lang en">Yijing Wu</span>
+          <span class="lang zh">吴依婧</span>
+        </a>
+      </div>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        ☰
+      </button>
+
+      <nav class="site-nav" id="siteNav">
+        <a href="index.html">
+          <span class="lang en">Home</span>
+          <span class="lang zh">首页</span>
+        </a>
+        <a href="cv.html">
+          <span class="lang en">CV</span>
+          <span class="lang zh">简历</span>
+        </a>
+        <a href="portfolio.html">
+          <span class="lang en">Portfolio</span>
+          <span class="lang zh">作品集</span>
+        </a>
+        <a href="research.html">
+          <span class="lang en">Academic Research</span>
+          <span class="lang zh">学术研究</span>
+        </a>
+        <a href="photography.html">
+          <span class="lang en">Photography</span>
+          <span class="lang zh">摄影作品</span>
+        </a>
+
+        <button id="lang-toggle" class="lang-btn" type="button">中文</button>
+      </nav>
+    </header>
+
+    <!-- Project Content Section -->
+    <section class="momo-content-section">
+      <div class="momo-content-wrapper">
+
+        <!-- Intro -->
+        <div class="momo-info-block">
+          <p class="momo-category">Digital Marketing / Campaign Design</p>
+          <h1 class="momo-project-title">Cuppia Campaign</h1>
+          <p class="momo-project-desc">
+            This project is a digital marketing campaign created for Cuppia, a mug brand focused on seasonal and limited-edition collections.
+            The campaign includes an email advertisement, Instagram promotional visuals, a landing page design, presentation slides,
+            and a project explanation video. The project explores visual consistency, brand storytelling, and multi-platform campaign communication.
+          </p>
+        </div>
+
+        <div class="back-btn-wrapper">
+          <a href="portfolio.html" class="back-btn">← Back to Portfolio</a>
+        </div>
+
+        <!-- Email Ad -->
+        <div class="momo-card full-width">
+          <h2>Email Advertisement</h2>
+          <p class="demo-text">
+            This email ad was designed to communicate the key campaign message in a direct and visually engaging format.
+            It focuses on product promotion, clear hierarchy, and brand consistency.
+          </p>
+
+          <div class="single-image-card email-card">
+            <img src="images/email-ad.jpg" alt="Email Advertisement Design" />
+          </div>
+        </div>
+
+        <!-- Instagram Slider -->
+        <div class="momo-card full-width">
+          <h2>Instagram Promotional Post</h2>
+          <p class="demo-text">
+            This Instagram post is presented as a 3-image carousel ad. The three slides work together as one promotional post.
+          </p>
+
+          <div class="slider-wrapper">
+            <button class="slider-btn prev" onclick="moveSlide(-1)">❮</button>
+
+            <div class="slider-window">
+              <div class="slider-track" id="sliderTrack">
+                <div class="slide">
+                  <img src="images/ins-1.jpg" alt="Instagram Slide 1" />
+                </div>
+                <div class="slide">
+                  <img src="images/ins-2.jpg" alt="Instagram Slide 2" />
+                </div>
+                <div class="slide">
+                  <img src="images/ins-3.jpg" alt="Instagram Slide 3" />
+                </div>
+              </div>
+            </div>
+
+            <button class="slider-btn next" onclick="moveSlide(1)">❯</button>
+          </div>
+
+          <div class="slider-dots">
+            <span class="dot active" onclick="goToSlide(0)"></span>
+            <span class="dot" onclick="goToSlide(1)"></span>
+            <span class="dot" onclick="goToSlide(2)"></span>
+          </div>
+        </div>
+
+        <!-- Landing Page -->
+        <div class="momo-card full-width">
+          <h2>Landing Page Design</h2>
+          <p class="demo-text">
+            The landing page was designed as the main destination for the campaign, where users can view the product,
+            understand the promotion, and take further action. The layout focuses on clarity, visual appeal, and user flow.
+          </p>
+
+          <div class="single-image-card landing-card">
+            <img src="images/landing-page.jpg" alt="Landing Page Design" />
+          </div>
+        </div>
+
+        <!-- PPT Section -->
+        <div class="momo-card full-width media-card">
+          <h2>Presentation Slides</h2>
+          <p class="demo-text">
+            This presentation introduces the campaign concept, target audience, visual strategy, and key promotional materials.
+            It provides an overview of the full campaign direction and design outcome.
+          </p>
+
+          <div class="embed-box large-embed">
+            <iframe
+              src="assets/campaign-presentation.pdf"
+              title="Campaign Presentation"
+              loading="lazy">
+            </iframe>
+          </div>
+        </div>
+
+        <!-- Video Section -->
+        <div class="momo-card full-width media-card">
+          <h2>Explanation Video</h2>
+          <p class="demo-text">
+            This video explains the campaign idea, creative direction, and the purpose of each design asset.
+            It shows how the campaign works across different platforms and how the visual language stays consistent.
+          </p>
+
+          <div class="video-box large-video">
+            <iframe
+              src="https://drive.google.com/file/d/1AUrxSma_qnQN7PMM2KplkcwsrpOneU5W/preview"
+              frameborder="0"
+              allow="autoplay; encrypted-media; fullscreen"
+              allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+
+
+
+        <!-- Highlights -->
+        <div class="momo-card full-width">
+          <h2>Project Highlights</h2>
+          <ul>
+            <li>Developed a multi-platform campaign system with a consistent visual identity.</li>
+            <li>Designed campaign materials for both social media and direct marketing channels.</li>
+            <li>Combined branding, promotion, and user engagement into one integrated project.</li>
+            <li>Created a clear visual direction that supports product storytelling and seasonal marketing.</li>
+            <li>Strengthened the campaign presentation through both static visuals and video explanation.</li>
+          </ul>
+        </div>
+
+        <!-- Process -->
+        <div class="momo-card full-width">
+          <h2>Development Process</h2>
+          <p>
+            The project began with defining the campaign theme, target audience, and overall brand tone.
+            In the early stage, I focused on building a clear visual direction that could be applied consistently across different formats,
+            including social media graphics, email advertising, landing page design, presentation slides, and video explanation.
+          </p>
+          <p>
+            After establishing the campaign concept, I developed each asset based on its platform and communication purpose.
+            The Instagram content was designed to attract attention quickly, the email ad focused on promotional messaging,
+            and the landing page was structured to present information more clearly and support user action.
+            The final outcome is a campaign system that combines visual consistency with platform-specific communication.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="site-footer" id="contact">
+      <div class="footer-container">
+
+        <div class="footer-left">
+          <h3>
+            <span class="lang en">Yijing Wu</span>
+            <span class="lang zh">吴依婧</span>
+          </h3>
+          <p>
+            <span class="lang en">
+              Digital Marketing & UI/UX Designer focused on creating meaningful digital experiences.
+            </span>
+            <span class="lang zh">
+              专注于打造有意义数字体验的数字营销与 UI/UX 设计师。
+            </span>
+          </p>
+        </div>
+
+        <div class="footer-center">
+          <a href="index.html"><span class="lang en">Home</span><span class="lang zh">首页</span></a>
+          <a href="cv.html"><span class="lang en">CV</span><span class="lang zh">简历</span></a>
+          <a href="portfolio.html"><span class="lang en">Portfolio</span><span class="lang zh">作品集</span></a>
+          <a href="research.html"><span class="lang en">Academic Research</span><span class="lang zh">学术研究</span></a>
+          <a href="photography.html"><span class="lang en">Photography</span><span class="lang zh">摄影作品</span></a>
+        </div>
+
+        <div class="footer-right">
+          <p>Email: <a href="mailto:wuyijing517a@gmail.com">wuyijing517a@gmail.com</a></p>
+          <p>LinkedIn: <a href="https://www.linkedin.com/in/yijing-wu-2368a92bb" target="_blank">linkedin.com/in/yijing-wu-2368a92bb</a></p>
+          <p>
+            Phone No.:
+            <a href="tel:+85263675546">+852 6367 5546</a> |
+            <a href="tel:+8613394053233">+86 133 9405 3233</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Yijing Wu. All Rights Reserved.</p>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    const navToggle = document.getElementById("navToggle");
+    const siteNav = document.getElementById("siteNav");
+    const toggleBtn = document.getElementById("lang-toggle");
+
+    navToggle.addEventListener("click", () => {
+      siteNav.classList.toggle("active");
+    });
+
+    function setLanguage(lang) {
+      if (lang === "zh") {
+        document.body.classList.add("zh-mode");
+        toggleBtn.textContent = "EN";
+        document.documentElement.lang = "zh-CN";
+        localStorage.setItem("language", "zh");
+      } else {
+        document.body.classList.remove("zh-mode");
+        toggleBtn.textContent = "中文";
+        document.documentElement.lang = "en";
+        localStorage.setItem("language", "en");
+      }
+    }
+
+    const savedLang = localStorage.getItem("language") || "en";
+    setLanguage(savedLang);
+
+    toggleBtn.addEventListener("click", () => {
+      const currentLang = document.body.classList.contains("zh-mode") ? "zh" : "en";
+      setLanguage(currentLang === "zh" ? "en" : "zh");
+    });
+
+    let currentSlide = 0;
+    const totalSlides = 3;
+    const sliderTrack = document.getElementById("sliderTrack");
+    const dots = document.querySelectorAll(".dot");
+
+    function updateSlider() {
+      sliderTrack.style.transform = `translateX(-${currentSlide * 100}%)`;
+      dots.forEach((dot, index) => {
+        dot.classList.toggle("active", index === currentSlide);
+      });
+    }
+
+    function moveSlide(direction) {
+      currentSlide += direction;
+      if (currentSlide < 0) currentSlide = totalSlides - 1;
+      if (currentSlide >= totalSlides) currentSlide = 0;
+      updateSlider();
+    }
+
+    function goToSlide(index) {
+      currentSlide = index;
+      updateSlider();
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,708 @@
+/* =========================
+   RESET
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #1f1f1f;
+  color: #111;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.page-wrapper {
+  width: 100%;
+  background: #f5f5f5;
+}
+
+/* =========================
+   LANGUAGE TOGGLE
+========================= */
+.lang.zh {
+  display: none;
+}
+
+body.zh-mode .lang.en {
+  display: none;
+}
+
+body.zh-mode .lang.zh {
+  display: inline;
+}
+
+/* =========================
+   HEADER
+========================= */
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px 28px;
+  background: #f5f5f5;
+  position: relative;
+  border-bottom: 1px solid #ddd;
+}
+
+.logo a {
+  font-size: 20px;
+  font-weight: 700;
+  color: #111;
+}
+
+.site-nav {
+  display: flex;
+  gap: 28px;
+  align-items: center;
+}
+
+.site-nav a {
+  font-size: 15px;
+  line-height: 1.2;
+  color: #333;
+  position: relative;
+}
+
+.site-nav a:hover {
+  color: #000;
+  text-decoration: underline;
+}
+
+.nav-toggle {
+  display: none;
+  border: none;
+  background: transparent;
+  font-size: 24px;
+  cursor: pointer;
+  color: #111;
+}
+
+.lang-btn {
+  font-size: 13px;
+  padding: 7px 14px;
+  border: 1px solid #111;
+  background: transparent;
+  color: #111;
+  cursor: pointer;
+  line-height: 1;
+  transition: all 0.25s ease;
+}
+
+.lang-btn:hover {
+  background: #111;
+  color: #fff;
+}
+
+.lang-btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+/* =========================
+   PROJECT PAGE
+========================= */
+.momo-content-section {
+  background: #f5f5f5;
+  padding: 70px 24px 90px;
+}
+
+.momo-content-wrapper {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.momo-info-block {
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto 40px auto;
+}
+
+.momo-category {
+  font-size: 16px;
+  color: #777;
+  margin-bottom: 14px;
+}
+
+.momo-project-title {
+  font-size: 48px;
+  line-height: 1.1;
+  margin-bottom: 20px;
+  color: #2a2a2a;
+}
+
+.momo-project-desc {
+  max-width: 900px;
+  font-size: 18px;
+  line-height: 1.8;
+  color: #4b4b4b;
+  margin: 0 auto;
+}
+
+.back-btn-wrapper {
+  margin-bottom: 20px;
+  text-align: right;
+}
+
+.back-btn {
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 20px;
+  background: #f5f5f5;
+  color: #333;
+  text-decoration: none;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  transition: all 0.2s ease;
+}
+
+.back-btn:hover {
+  background: #ebebeb;
+}
+.momo-grid-two {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin-bottom: 24px;
+}
+.momo-card {
+  background: #ffffff;
+  border: none;
+  border-radius: 28px;
+  padding: 30px 32px;
+  box-shadow: none;
+  margin-bottom: 24px;
+}
+
+.momo-card h2 {
+  font-size: 26px;
+  margin-bottom: 18px;
+  color: #2d2d2d;
+}
+
+.momo-card p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 16px;
+}
+
+.momo-card ul {
+  padding-left: 20px;
+}
+
+.momo-card li {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.demo-text {
+  margin-bottom: 20px;
+}
+
+/* =========================
+   IMAGE CARDS
+========================= */
+.single-image-card {
+  background: #fff;
+  border-radius: 24px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.single-image-card img {
+  width: 100%;
+  display: block;
+  object-fit: contain;
+}
+
+/* email ad 缩小并居中 */
+.email-card {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.email-card img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* landing page 正常大图 */
+.landing-card {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* =========================
+   INSTAGRAM SLIDER
+========================= */
+.slider-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.slider-window {
+  overflow: hidden;
+  width: 100%;
+  max-width: 760px;
+  margin: 0 auto;
+  border-radius: 24px;
+  background: #fff;
+}
+
+.slider-track {
+  display: flex;
+  transition: transform 0.4s ease;
+  width: 100%;
+}
+
+.slide {
+  min-width: 100%;
+  flex-shrink: 0;
+}
+
+.slide img {
+  width: 100%;
+  display: block;
+  object-fit: contain;
+}
+
+.slider-btn {
+  border: none;
+  background: #fff;
+  border: 1px solid #ddd;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+  color: #333;
+  flex-shrink: 0;
+  transition: all 0.2s ease;
+}
+
+.slider-btn:hover {
+  background: #f0f0f0;
+}
+
+.slider-dots {
+  margin-top: 18px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #cfcfcf;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.dot.active {
+  background: #666;
+}
+
+/* =========================
+   PPT / VIDEO
+========================= */
+.media-card {
+  padding: 34px 36px;
+}
+
+.embed-box,
+.video-box {
+  width: 100%;
+  border-radius: 24px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.large-embed iframe {
+  width: 100%;
+  height: 650px;
+  border: none;
+  display: block;
+}
+
+.large-video iframe {
+  width: 100%;
+  height: 650px;
+  border: none;
+  display: block;
+}
+
+/* =========================
+   FOOTER
+========================= */
+.site-footer {
+  background: #d9d9d9;
+  padding: 60px 70px 30px;
+  border-top: 1px solid rgba(0,0,0,0.08);
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 30px;
+}
+
+.footer-left h3 {
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+.footer-left p {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #555;
+  max-width: 320px;
+}
+
+.footer-center {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-center a {
+  font-size: 14px;
+  color: #111;
+  position: relative;
+  width: fit-content;
+}
+
+.footer-center a:hover {
+  text-decoration: underline;
+}
+
+.footer-right p {
+  font-size: 14px;
+  margin-bottom: 8px;
+  color: #111;
+}
+
+.footer-right a {
+  color: #111;
+}
+
+.footer-right a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  padding-top: 5px;
+  text-align: center;
+}
+
+.footer-bottom p {
+  font-size: 13px;
+  color: #666;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 992px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .footer-left,
+  .footer-center,
+  .footer-right {
+    text-align: center;
+  }
+
+  .footer-center {
+    align-items: center;
+  }
+
+  .footer-left p {
+    max-width: none;
+  }
+
+  .large-embed iframe {
+    height: 760px;
+  }
+
+  .large-video iframe {
+    height: 620px;
+  }
+}
+
+@media (max-width: 768px) {
+  .page-wrapper {
+    width: 100%;
+    margin: 0;
+  }
+
+  .site-header {
+    padding: 18px 20px;
+    align-items: center;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+
+  .site-nav {
+    display: none;
+    position: absolute;
+    top: 62px;
+    right: 20px;
+    background: #f5f5f5;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+    padding: 18px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    z-index: 99;
+  }
+
+  .site-nav.active {
+    display: flex;
+  }
+
+  .momo-content-section {
+    padding: 50px 18px 70px;
+  }
+
+  .momo-project-title {
+    font-size: 34px;
+  }
+
+  .momo-project-desc {
+    font-size: 16px;
+  }
+
+  .momo-card {
+    padding: 24px 18px;
+    border-radius: 22px;
+  }
+
+  .momo-card h2 {
+    font-size: 22px;
+  }
+
+  .slider-wrapper {
+    gap: 10px;
+  }
+
+  .slider-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+  }
+
+  .large-embed iframe {
+    height: 560px;
+  }
+
+  .large-video iframe {
+    height: 430px;
+  }
+
+  .site-footer {
+    padding: 40px 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo a {
+    font-size: 18px;
+  }
+
+  .momo-project-title {
+    font-size: 30px;
+  }
+
+  .momo-category {
+    font-size: 14px;
+  }
+
+  .momo-project-desc {
+    font-size: 15px;
+  }
+
+  .momo-card p,
+  .momo-card li {
+    font-size: 15px;
+  }
+
+  .large-embed iframe {
+    height: 420px;
+  }
+
+  .large-video iframe {
+    height: 300px;
+  }
+
+  .slider-btn {
+    width: 36px;
+    height: 36px;
+    font-size: 16px;
+  }
+}
+/* =========================
+   INSTAGRAM SLIDER（修复版）
+========================= */
+
+.slider-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 400px;   /* ⭐关键：整体缩小 */
+  margin: 0 auto;
+}
+
+.slider-window {
+  overflow: hidden;
+  width: 100%;
+  border-radius: 20px;
+  background: #fff;
+}
+
+.slider-track {
+  display: flex;
+  transition: transform 0.35s ease;
+}
+
+.slide {
+  min-width: 100%;
+}
+
+.slide img {
+  width: 100%;
+  height: 720px;           /* ⭐统一高度 */
+  object-fit: cover;       /* ⭐关键：填满，不留白 */
+}
+
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
+  z-index: 2;
+
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: none;
+
+  background: rgba(0,0,0,0.4);
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* ⭐关键：往外移 */
+.slider-btn.prev {
+  left: -50px;   /* 原来是 10px */
+}
+
+.slider-btn.next {
+  right: -50px;  /* 原来是 10px */
+}
+
+.slider-btn:hover {
+  background: rgba(0,0,0,0.6);
+}
+
+/* dots */
+.slider-dots {
+  margin-top: 12px;
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #ccc;
+}
+
+.dot.active {
+  background: #333;
+}
+.lang-btn {
+  font-size: 13px;
+  padding: 6px 14px;
+  border-radius: 999px;
+  border: 1px solid #d8d8d8;
+  background: #f5f5f5;
+  color: #333;
+  cursor: pointer;
+  line-height: 1;
+  transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+.lang-btn:hover {
+  background: #ebebeb;
+  border-color: #cfcfcf;
+  color: #111;
+}
+
+.lang-btn:active {
+  background: #e3e3e3;
+}
+
+.lang-btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+    
+.app-screen-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 18px;
+  margin-top: 24px;
+}
+
+.app-screen-grid img {
+  width: 100%;
+  border-radius: 24px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  object-fit: cover;
+}
+
+@media (max-width: 900px) {
+  .app-screen-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 520px) {
+  .app-screen-grid {
+    grid-template-columns: 1fr;
+  }
+}
