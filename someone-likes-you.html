@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yijing Wu | Someone Likes You </title>
+
+  <link rel="stylesheet" href="css/cuppia_style.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  />
+</head>
+<style>
+  #filmPhotos .slider-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 960px;
+    margin: 24px auto 0;
+    padding: 0;
+  }
+
+  #filmPhotos .slider-window {
+    width: 100%;
+    max-width: none;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    border-radius: 16px;
+  }
+
+  #filmPhotos .slider-track {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    gap: 0;
+    transition: transform 0.4s ease;
+  }
+
+  #filmPhotos .slide {
+    flex: 0 0 100%;
+    width: 100%;
+    min-width: 100%;
+    max-width: none;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  #filmPhotos .slide img {
+    display: block;
+    width: 100%;
+    max-width: none;
+    height: 100%;
+    max-height: none;
+    object-fit: contain;
+    object-position: center;
+    border-radius: 0;
+  }
+
+  #filmPhotos .slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+  }
+
+  #filmPhotos .slider-btn.prev {
+    left: 12px;
+  }
+
+  #filmPhotos .slider-btn.next {
+    right: 12px;
+  }
+
+  #filmPhotos .slider-dots {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 16px;
+  }
+</style>
+<body>
+  <div class="page-wrapper">
+
+    <!-- Header -->
+    <header class="site-header">
+      <div class="logo">
+        <a href="index.html">
+          <span class="lang en">Yijing Wu</span>
+          <span class="lang zh">吴依婧</span>
+        </a>
+      </div>
+
+      <button
+        class="nav-toggle"
+        id="navToggle"
+        type="button"
+        aria-label="Toggle navigation"
+        aria-controls="siteNav"
+        aria-expanded="false"
+      >☰</button>
+
+      <nav class="site-nav" id="siteNav">
+        <a href="index.html">
+          <span class="lang en">Home</span>
+          <span class="lang zh">首页</span>
+        </a>
+        <a href="cv.html">
+          <span class="lang en">CV</span>
+          <span class="lang zh">简历</span>
+        </a>
+        <a href="portfolio.html">
+          <span class="lang en">Portfolio</span>
+          <span class="lang zh">作品集</span>
+        </a>
+        <a href="research.html">
+          <span class="lang en">Academic Research</span>
+          <span class="lang zh">学术研究</span>
+        </a>
+        <a href="photography.html">
+          <span class="lang en">Photography</span>
+          <span class="lang zh">摄影作品</span>
+        </a>
+
+        <button id="lang-toggle" class="lang-btn" type="button">
+          中文
+        </button>
+      </nav>
+    </header>
+
+
+
+<main class="momo-content-section">
+  <div class="momo-content-wrapper">
+
+    <!-- Introduction -->
+    <div class="momo-info-block">
+      <p class="momo-category">
+        <span class="lang en">Video &amp; Sound / Visual Storytelling</span>
+        <span class="lang zh">影像与声音 / 视觉叙事</span>
+      </p>
+
+      <h1 class="momo-project-title">Someone Likes You</h1>
+
+      <p class="momo-project-desc">
+        <span class="lang en">
+          An image and sound project following a toy dog's little
+          Valentine's Day adventure. Hoping to surprise its owner,
+          it heads out for the day and returns with a rose and
+          a soda-can ring pull — a small gift with a heartfelt meaning.
+        </span>
+        <span class="lang zh">
+          一个结合影像与声音的叙事作品，记录玩偶小狗的情人节冒险。
+          为了给主人准备惊喜，它独自出门，
+          最后带回一朵玫瑰和一枚易拉罐拉环，
+          用简单的礼物表达心意。
+        </span>
+      </p>
+    </div>
+
+    <div class="back-btn-wrapper">
+      <a href="portfolio.html" class="back-btn">
+        <span class="lang en">← Back to Portfolio</span>
+        <span class="lang zh">← 返回作品集</span>
+      </a>
+    </div>
+
+    <!-- Concept -->
+    <div class="momo-card full-width">
+      <h2>
+        <span class="lang en">Story &amp; Concept</span>
+        <span class="lang zh">故事与创作概念</span>
+      </h2>
+
+      <p>
+        <span class="lang en">
+          The story approaches Valentine's Day through the perspective
+          of a toy dog. Its search for a surprise turns an ordinary day
+          out into a small act of affection. A rose and a ring pull
+          become symbols of care, suggesting that the meaning of a
+          gift comes from the thought behind it.
+        </span>
+        <span class="lang zh">
+          故事从玩偶小狗的视角出发，将一次普通的外出，
+          变成寻找情人节惊喜的小小旅程。
+          玫瑰与易拉罐拉环成为表达关心的信物，
+          也让故事传递出：礼物的意义来自准备它的心意。
+        </span>
+      </p>
+    </div>
+
+    <!-- Video -->
+    <div class="momo-card full-width media-card">
+      <h2>
+        <span class="lang en">Watch the Film</span>
+        <span class="lang zh">观看作品</span>
+      </h2>
+
+      <p class="demo-text">
+        <span class="lang en">
+          Follow a little adventure, from a day out to a Valentine's
+          surprise.
+        </span>
+        <span class="lang zh">
+          从独自出门到带回礼物，跟随小狗完成这场情人节冒险。
+        </span>
+      </p>
+
+      <video
+        controls
+        playsinline
+        preload="metadata"
+        style="display: block; width: 100%; height: auto; border-radius: 16px;"
+      >
+        <source src="assets/someone-likes-you.mp4" type="video/mp4" />
+        Your browser does not support embedded video.
+        <a href="assets/someone-likes-you.mp4">Open the video</a>.
+      </video>
+    </div>
+
+
+
+<!-- Creative Process -->
+<!-- Creative Process -->
+<div class="momo-card full-width">
+  <h2>
+    <span class="lang en">Creative Process</span>
+    <span class="lang zh">创作过程</span>
+  </h2>
+
+  <ul>
+    <li>
+      <p>
+        <span class="lang en">
+          <strong>Story Planning:</strong>
+          Developed the toy dog's Valentine's Day adventure,
+          connecting its departure, search for gifts, and return home.
+        </span>
+        <span class="lang zh">
+          <strong>故事策划：</strong>
+          围绕玩偶小狗的情人节冒险，
+          安排出门、寻找礼物与回家的故事顺序。
+        </span>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        <span class="lang en">
+          <strong>Photography:</strong>
+          Used a Sony ZV-E10 to capture different settings,
+          using toy placement, camera angles, and framing
+          to suggest movement and intention.
+        </span>
+        <span class="lang zh">
+          <strong>影像拍摄：</strong>
+          使用 Sony ZV-E10 拍摄，
+          通过玩偶摆放、拍摄角度与构图，
+          表现小狗的行动与意图。
+        </span>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        <span class="lang en">
+          <strong>Editing:</strong>
+          Assembled the material in Adobe Premiere Pro,
+          adjusting image order and shot duration
+          to build the narrative rhythm.
+        </span>
+        <span class="lang zh">
+          <strong>后期剪辑：</strong>
+          使用 Adobe Premiere Pro 整理素材，
+          调整画面顺序与镜头时长，建立叙事节奏。
+        </span>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        <span class="lang en">
+          <strong>Sound &amp; Image:</strong>
+          Coordinated sound with the images to support
+          transitions and the story's emotional tone.
+        </span>
+        <span class="lang zh">
+          <strong>声音与画面：</strong>
+          配合画面安排声音，衔接场景转换，
+          营造故事的情绪与氛围。
+        </span>
+      </p>
+    </li>
+  </ul>
+</div>
+
+
+<!-- Selected Photographs -->
+<div class="momo-card full-width" id="filmPhotos">
+  <h2>
+    <span class="lang en">Selected Photographs</span>
+    <span class="lang zh">拍摄照片选集</span>
+  </h2>
+
+  <p class="demo-text">
+    <span class="lang en">
+      Six selected photographs showing the story's settings,
+      framing, and details.
+    </span>
+    <span class="lang zh">
+      精选六张拍摄照片，展示故事中的场景、构图与细节。
+    </span>
+  </p>
+
+  <div class="slider-wrapper">
+    <button
+      class="slider-btn prev"
+      type="button"
+      onclick="movePhoto(-1)"
+      aria-label="Previous photograph"
+    >❮</button>
+
+    <div class="slider-window">
+      <div class="slider-track" id="photoTrack">
+
+        <div class="slide">
+          <img src="images/someone-likes-you-01.jpg"
+               alt="Someone Likes You — photograph 1" />
+        </div>
+
+        <div class="slide">
+          <img src="images/someone-likes-you-02.jpg"
+               alt="Someone Likes You — photograph 2" />
+        </div>
+
+        <div class="slide">
+          <img src="images/someone-likes-you-03.jpg"
+               alt="Someone Likes You — photograph 3" />
+        </div>
+
+        <div class="slide">
+          <img src="images/someone-likes-you-04.jpg"
+               alt="Someone Likes You — photograph 4" />
+        </div>
+
+        <div class="slide">
+          <img src="images/someone-likes-you-05.jpg"
+               alt="Someone Likes You — photograph 5" />
+        </div>
+
+        <div class="slide">
+          <img src="images/someone-likes-you-06.jpg"
+               alt="Someone Likes You — photograph 6" />
+        </div>
+
+      </div>
+    </div>
+
+    <button
+      class="slider-btn next"
+      type="button"
+      onclick="movePhoto(1)"
+      aria-label="Next photograph"
+    >❯</button>
+  </div>
+
+  <div class="slider-dots" id="photoDots">
+    <span class="dot active" onclick="goToPhoto(0)"></span>
+    <span class="dot" onclick="goToPhoto(1)"></span>
+    <span class="dot" onclick="goToPhoto(2)"></span>
+    <span class="dot" onclick="goToPhoto(3)"></span>
+    <span class="dot" onclick="goToPhoto(4)"></span>
+    <span class="dot" onclick="goToPhoto(5)"></span>
+  </div>
+</div>
+
+
+
+<!-- References PDF -->
+<div class="momo-card full-width media-card">
+  <h2>
+    <span class="lang en">References &amp; Credits</span>
+    <span class="lang zh">参考资料与素材鸣谢</span>
+  </h2>
+
+  <p class="demo-text">
+    <span class="lang en">
+      References and credits for the materials used in this project.
+    </span>
+    <span class="lang zh">
+      本作品使用的参考资料与素材来源。
+    </span>
+  </p>
+
+  <p>
+    <a
+      href="assets/someone-likes-you-references.pdf"
+      class="project-link"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <span class="lang en">Open References ↗</span>
+      <span class="lang zh">打开参考资料 ↗</span>
+    </a>
+  </p>
+
+  <div class="embed-box large-embed">
+    <iframe
+      src="assets/someone-likes-you-references.pdf"
+      title="Someone Likes You References and Credits"
+      loading="lazy"
+    ></iframe>
+  </div>
+</div>
+
+<div class="back-btn-wrapper">
+      <a href="portfolio.html" class="back-btn">
+        <span class="lang en">← Back to Portfolio</span>
+        <span class="lang zh">← 返回作品集</span>
+      </a>
+    </div>
+  </div>
+</main>
+
+
+ <!-- Footer -->
+    <footer class="site-footer" id="contact">
+      <div class="footer-container">
+
+        <div class="footer-left">
+          <h3>
+            <span class="lang en">Yijing Wu</span>
+            <span class="lang zh">吴依婧</span>
+          </h3>
+          <p>
+            <span class="lang en">
+              Bringing together insights, content, and design to
+              communicate brand value.
+            </span>
+            <span class="lang zh">
+              结合洞察、内容与设计，传递品牌价值。
+            </span>
+          </p>
+        </div>
+
+        <div class="footer-center">
+          <a href="index.html">
+            <span class="lang en">Home</span>
+            <span class="lang zh">首页</span>
+          </a>
+          <a href="cv.html">
+            <span class="lang en">CV</span>
+            <span class="lang zh">简历</span>
+          </a>
+          <a href="portfolio.html">
+            <span class="lang en">Portfolio</span>
+            <span class="lang zh">作品集</span>
+          </a>
+          <a href="research.html">
+            <span class="lang en">Academic Research</span>
+            <span class="lang zh">学术研究</span>
+          </a>
+          <a href="photography.html">
+            <span class="lang en">Photography</span>
+            <span class="lang zh">摄影作品</span>
+          </a>
+        </div>
+
+        <div class="footer-right">
+          <p>
+            Email:
+            <a href="mailto:wuyijing517a@gmail.com">
+              wuyijing517a@gmail.com
+            </a>
+          </p>
+          <p>
+            LinkedIn:
+            <a
+              href="https://www.linkedin.com/in/yijing-wu-2368a92bb"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              linkedin.com/in/yijing-wu-2368a92bb
+            </a>
+          </p>
+          <p>
+            Phone No.:
+            <a href="tel:+85263675546">+852 6367 5546</a> |
+            <a href="tel:+8613394053233">+86 133 9405 3233</a>
+          </p>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Yijing Wu. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+  </div>
+
+  <script>
+    const navToggle = document.getElementById("navToggle");
+    const siteNav = document.getElementById("siteNav");
+    const toggleBtn = document.getElementById("lang-toggle");
+
+    navToggle.addEventListener("click", () => {
+      const isOpen = siteNav.classList.toggle("active");
+      navToggle.setAttribute("aria-expanded", String(isOpen));
+    });
+
+    function setLanguage(lang) {
+      const isChinese = lang === "zh";
+
+      document.body.classList.toggle("zh-mode", isChinese);
+      document.documentElement.lang = isChinese ? "zh-CN" : "en";
+      toggleBtn.textContent = isChinese ? "EN" : "中文";
+
+      try {
+        localStorage.setItem("language", isChinese ? "zh" : "en");
+      } catch (error) {
+        // Language switching remains available if storage is blocked.
+      }
+    }
+
+    let savedLanguage = "en";
+
+    try {
+      savedLanguage = localStorage.getItem("language") || "en";
+    } catch (error) {
+      // Use English when storage is unavailable.
+    }
+
+    setLanguage(savedLanguage);
+
+    toggleBtn.addEventListener("click", () => {
+      const isChinese = document.body.classList.contains("zh-mode");
+      setLanguage(isChinese ? "en" : "zh");
+    });
+  let currentPhoto = 0;
+
+  const photoTrack = document.getElementById("photoTrack");
+  const photoDots = document.querySelectorAll("#photoDots .dot");
+  const totalPhotos = photoTrack.children.length;
+
+  function updatePhotos() {
+    photoTrack.style.transform =
+      `translateX(-${currentPhoto * 100}%)`;
+
+    photoDots.forEach((dot, index) => {
+      dot.classList.toggle("active", index === currentPhoto);
+    });
+  }
+
+  function movePhoto(direction) {
+    currentPhoto =
+      (currentPhoto + direction + totalPhotos) % totalPhotos;
+
+    updatePhotos();
+  }
+
+  function goToPhoto(index) {
+    currentPhoto = index;
+    updatePhotos();
+  }
+</script>
+</body>
+</html>

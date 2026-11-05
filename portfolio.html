@@ -1,0 +1,797 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Yijing Wu - Portfolio</title>
+
+  <script src="https://kit.fontawesome.com/a2c653daa5.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/portfolio_style.css">
+</head>
+<body>
+  <div class="page-wrapper">
+
+    <!-- Header -->
+ <!-- Header -->
+    <header class="site-header">
+      <div class="logo">
+        <a href="index.html">
+          <span class="lang en">Yijing Wu</span>
+          <span class="lang zh">吴依婧</span>
+        </a>
+      </div>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        ☰
+      </button>
+
+      <nav class="site-nav" id="siteNav">
+        <a href="index.html">
+          <span class="lang en">Home</span>
+          <span class="lang zh">首页</span>
+        </a>
+        <a href="cv.html">
+          <span class="lang en">CV</span>
+          <span class="lang zh">简历</span>
+        </a>
+        <a href="portfolio.html">
+          <span class="lang en">Portfolio</span>
+          <span class="lang zh">作品集</span>
+        </a>
+        <a href="research.html">
+          <span class="lang en">Academic Research</span>
+          <span class="lang zh">学术研究</span>
+        </a>
+        <a href="photography.html">
+          <span class="lang en">Photography</span>
+          <span class="lang zh">摄影作品</span>
+        </a>
+
+        <button id="lang-toggle" class="lang-btn" type="button">中文</button>
+      </nav>
+    </header>
+
+
+  <!-- Hero -->
+    <section class="portfolio-hero">
+      <h1>
+        <span class="lang en">Portfolio</span>
+        <span class="lang zh">作品集</span>
+      </h1>
+      <p>
+        <span class="lang en">
+          A selection of my projects in web design, creative coding, branding, and visual design.
+        </span>
+        <span class="lang zh">
+          这里展示了我在网页设计、创意编程、品牌设计与视觉设计方面的部分项目作品。
+        </span>
+      </p>
+    </section>
+
+    <!-- Filters -->
+ <!-- Filters -->
+<div class="portfolio-filters">
+  <button class="filter-btn active" data-filter="all" type="button">
+    <span class="lang en">All</span>
+    <span class="lang zh">全部</span>
+  </button>
+
+  <button class="filter-btn" data-filter="web" type="button">
+    <span class="lang en">Web &amp; UX Design</span>
+    <span class="lang zh">网页与用户体验设计</span>
+  </button>
+
+  <button class="filter-btn" data-filter="interactive" type="button">
+    <span class="lang en">Interactive &amp; Data</span>
+    <span class="lang zh">互动与数据可视化</span>
+  </button>
+
+  <button class="filter-btn" data-filter="branding" type="button">
+    <span class="lang en">Branding &amp; Visual Design</span>
+    <span class="lang zh">品牌与视觉设计</span>
+  </button>
+
+  <button class="filter-btn" data-filter="media" type="button">
+    <span class="lang en">Video &amp; Sound</span>
+    <span class="lang zh">影像与声音</span>
+  </button>
+</div>
+
+ <!-- Portfolio Section -->
+<section class="portfolio-section">
+  <div class="project-grid">
+
+    <!-- Web / UX (4个) -->
+    <article class="project-card portfolio-item web">
+      <img src="images/personal web_cover.jpg" alt="Personal Website project">
+      <div class="project-info">
+        <span class="project-category">
+          <span class="lang en">Web / UX Design</span>
+          <span class="lang zh">网页 / 用户体验设计</span>
+        </span>
+        <h3>
+          <span class="lang en">Personal Website</span>
+          <span class="lang zh">个人网站</span>
+        </h3>
+        <p>
+          <span class="lang en">
+            A responsive personal website showcasing my CV, projects, and design works.
+          </span>
+          <span class="lang zh">
+            一个展示个人简历、项目与设计作品的响应式网站。
+          </span>
+        </p>
+        <a href="personal web.html" class="project-link">
+          <span class="lang en">See Details</span>
+          <span class="lang zh">查看详情</span>
+        </a>
+      </div>
+    </article>
+
+    <article class="project-card portfolio-item web">
+      <img src="images/feature-web.jpg" alt="Travel Website project">
+      <div class="project-info">
+        <span class="project-category">
+          <span class="lang en">Web / UX Design</span>
+          <span class="lang zh">网页 / 用户体验设计</span>
+        </span>
+        <h3>
+          <span class="lang en">Global Travel Website</span>
+          <span class="lang zh">环球旅游网站</span>
+        </h3>
+        <p>
+          <span class="lang en">
+            A travel guide platform providing destination exploration, travel tips, and visual inspiration.
+          </span>
+          <span class="lang zh">
+            一个提供目的地探索、旅行攻略与视觉内容的旅游网站。
+          </span>
+        </p>
+        <a href="travel.html" class="project-link">
+          <span class="lang en">See Details</span>
+          <span class="lang zh">查看详情</span>
+        </a>
+      </div>
+    </article>
+
+    <article class="project-card portfolio-item web">
+      <img src="images/project4.jpg" alt="TourMap App UX">
+      <div class="project-info">
+        <span class="project-category">
+          <span class="lang en">Web / UX Design</span>
+          <span class="lang zh">网页 / 用户体验设计</span>
+        </span>
+        <h3>
+          <span class="lang en">TourMap App UX Design</span>
+          <span class="lang zh">TourMap 应用 UX 设计</span>
+        </h3>
+        <p>
+          <span class="lang en">
+            A GPS-based cultural tourism app that helps users explore historical landmarks, museums, and local stories through location-based experiences and interactive content.
+          </span>
+          <span class="lang zh">
+            一款基于 GPS 的文化旅游应用，通过位置服务和互动内容帮助用户探索历史地标、博物馆与当地文化故事。
+          </span>
+        </p>
+        <a href="Tourmap.html" class="project-link">
+          <span class="lang en">See Details</span>
+          <span class="lang zh">查看详情</span>
+        </a>
+      </div>
+    </article>
+
+<article class="project-card portfolio-item web">
+  <img src="images/talkin.jpg" alt="Talkin Language Learning App UX">
+  <div class="project-info">
+    <span class="project-category">
+      <span class="lang en">Web / UX Design</span>
+      <span class="lang zh">网页 / 用户体验设计</span>
+    </span>
+    <h3>
+      <span class="lang en">Talkin Language Learning App UX Design</span>
+      <span class="lang zh">Talkin 语言学习与社区整合应用设计</span>
+    </h3>
+    <p>
+      <span class="lang en">
+  A language learning app that connects international students and newcomers through interactive learning and community experiences.
+</span>
+<span class="lang zh">
+  一款面向国际学生和新移民的语言学习应用，通过互动学习和社区交流帮助用户建立连接。
+</span>
+    </p>
+    <a href="Talkin.html" class="project-link">
+      <span class="lang en">See Details</span>
+      <span class="lang zh">查看详情</span>
+    </a>
+  </div>
+</article>
+
+<!-- Talk Link -->
+<article class="project-card portfolio-item web">
+  <img
+    src="images/talklink.jpg"
+    alt="Talk Link language learning and community integration app"
+    loading="lazy"
+  >
+
+  <div class="project-info">
+    <span class="project-category">
+      <span class="lang en">Web / UX Design</span>
+      <span class="lang zh">网页 / 用户体验设计</span>
+    </span>
+
+    <h3>
+      <span class="lang en">Talk Link</span>
+      <span class="lang zh">Talk Link 语言学习与社区融入应用</span>
+    </h3>
+
+    <p>
+      <span class="lang en">
+        A group UX project exploring language barriers and community
+        integration through interviews, open-ended surveys,
+        paper prototyping, and user testing.
+      </span>
+      <span class="lang zh">
+        一个围绕语言障碍与社区融入的小组 UX 项目，
+        结合访谈、开放式问卷、纸面原型与用户测试，
+        探索帮助新移民和国际学生建立连接的方式。
+      </span>
+    </p>
+
+    <a href="Talk-link.html" class="project-link">
+      <span class="lang en">See Details</span>
+      <span class="lang zh">查看详情</span>
+    </a>
+  </div>
+</article>
+
+
+    <!-- Creative Coding (3个) -->
+    <article class="project-card portfolio-item interactive">
+      <img src="images/firework_cover.jpg" alt="Firework project">
+      <div class="project-info">
+        <span class="project-category">
+          <span class="lang en">Interactive &amp; Data</span>
+          <span class="lang zh">互动与数据可视化</span>
+        </span>
+        <h3>
+          <span class="lang en">Interactive Firework Project</span>
+          <span class="lang zh">烟花互动项目</span>
+        </h3>
+        <p>
+          <span class="lang en">
+            A visual interactive project using creative coding to simulate dynamic fireworks.
+          </span>
+          <span class="lang zh">
+            一个使用创意编程实现动态烟花效果的互动项目。
+          </span>
+        </p>
+        <a href="firework.html" class="project-link">
+          <span class="lang en">See Details</span>
+          <span class="lang zh">查看详情</span>
+        </a>
+      </div>
+    </article>
+
+    <article class="project-card portfolio-item interactive">
+      <img src="images/momo_cover.jpg" alt="Momo project">
+      <div class="project-info">
+        <span class="project-category">
+          <span class="lang en">Interactive &amp; Data</span>
+          <span class="lang zh">互动与数据可视化</span>
+        </span>
+        <h3>
+          <span class="lang en">Momo Virtual Pet</span>
+          <span class="lang zh">Momo 虚拟宠物</span>
+        </h3>
+        <p>
+          <span class="lang en">
+            An interactive pet simulator where users engage with a digital character through actions.
+          </span>
+          <span class="lang zh">
+            一个通过用户操作与虚拟角色互动的宠物模拟项目。
+          </span>
+        </p>
+        <a href="momo.html" class="project-link">
+          <span class="lang en">See Details</span>
+          <span class="lang zh">查看详情</span>
+        </a>
+      </div>
+    </article>
+
+
+    <article class="project-card portfolio-item interactive">
+  <img
+    src="images/time-spent-alone-cover.jpg"
+    alt="Visualization of time spent alone across age groups in the United States"
+    loading="lazy"
+  >
+
+  <div class="project-info">
+    <span class="project-category">
+      <span class="lang en">Interactive &amp; Data</span>
+      <span class="lang zh">互动与数据可视化</span>
+    </span>
+
+    <h3>
+      <span class="lang en">Visualizing Time Spent Alone</span>
+      <span class="lang zh">独处时间数据可视化</span>
+    </h3>
+
+    <p>
+      <span class="lang en">
+        A group social data analytics project using line and bar
+        charts to explore changes in Americans’ daily time spent
+        alone across age groups from 2003 to 2023.
+      </span>
+      <span class="lang zh">
+        一个社会数据分析小组项目，
+        通过折线图与柱状图，
+        探索 2003–2023 年美国不同年龄群体每日独处时间的变化。
+      </span>
+    </p>
+
+    <a href="time-alone.html" class="project-link">
+      <span class="lang en">See Details</span>
+      <span class="lang zh">查看详情</span>
+    </a>
+  </div>
+</article>
+
+
+<!-- CCT460 GDP Visualization -->
+<article class="project-card portfolio-item interactive">
+  <img
+    src="images/gdp-visualization-cover.jpg"
+    alt="Interactive GDP per capita visualization for ten North American countries"
+    loading="lazy"
+  >
+
+  <div class="project-info">
+    <span class="project-category">
+      <span class="lang en">Interactive &amp; Data</span>
+      <span class="lang zh">互动与数据可视化</span>
+    </span>
+
+    <h3>
+      <span class="lang en">North American GDP Explorer</span>
+      <span class="lang zh">北美人均 GDP 互动图表</span>
+    </h3>
+
+    <p>
+      <span class="lang en">
+        A collaborative p5.js visualization comparing GDP per capita
+        across ten North American countries through animated lines,
+        interactive tooltips, and country highlighting.
+      </span>
+      <span class="lang zh">
+        使用 p5.js 合作完成的人均 GDP 可视化项目，
+        结合动态折线、悬停提示与国家高亮，
+        帮助用户比较北美十个国家的经济趋势。
+      </span>
+    </p>
+
+    <a href="gdp-visualization.html" class="project-link">
+      <span class="lang en">See Details</span>
+      <span class="lang zh">查看详情</span>
+    </a>
+  </div>
+</article>
+
+
+    <!-- Branding (3个) -->
+    <article class="project-card portfolio-item branding">
+      <img src="images/project8.jpg" alt="Cuppia">
+      <div class="project-info">
+        <span class="project-category">
+          <span class="lang en">Branding &amp; Visual Design</span>
+          <span class="lang zh">品牌与视觉设计</span>
+        </span>
+        <h3>
+          <span class="lang en">Cuppia Campaign</span>
+          <span class="lang zh">Cuppia 品牌营销</span>
+        </h3>
+        <p>
+          <span class="lang en">
+            A seasonal marketing campaign including branding, visuals, and social media strategy.
+          </span>
+          <span class="lang zh">
+            一个包含品牌视觉与社交媒体策略的营销企划项目。
+          </span>
+        </p>
+        <a href="cuppia.html" class="project-link">
+          <span class="lang en">See Details</span>
+          <span class="lang zh">查看详情</span>
+        </a>
+      </div>
+    </article>
+
+<!-- Bao-tiful Shots -->
+<article class="project-card portfolio-item branding">
+  <img
+    src="images/baotiful-cover.jpg"
+    alt="Bao-tiful Shots marketing strategy project"
+    loading="lazy"
+  >
+
+  <div class="project-info">
+    <span class="project-category">
+      <span class="lang en">Branding &amp; Visual Design</span>
+      <span class="lang zh">品牌与视觉设计</span>
+    </span>
+
+    <h3>
+      <span class="lang en">Bao-tiful Shots Marketing Strategy</span>
+      <span class="lang zh">Bao-tiful Shots 营销策划</span>
+    </h3>
+
+    <p>
+      <span class="lang en">
+        A group marketing proposal for a cultural photography brand,
+        covering audience analysis, brand positioning, phased
+        promotion, and advertising and landing page mockups.
+      </span>
+      <span class="lang zh">
+        面向文化摄影品牌的小组营销方案，
+        涵盖目标受众分析、品牌定位、分阶段推广，
+        以及广告与落地页创意设计。
+      </span>
+    </p>
+
+    <a href="baotiful.html" class="project-link">
+      <span class="lang en">See Details</span>
+      <span class="lang zh">查看详情</span>
+    </a>
+  </div>
+</article>
+
+
+    <!-- Visual Design (5个) -->
+    <article class="project-card portfolio-item branding">
+      <img src="images/project11.jpg" alt="Travel Ebook">
+      <div class="project-info">
+        <span class="project-category">
+          <span class="lang en">Branding &amp; Visual Design</span>
+          <span class="lang zh">品牌与视觉设计</span>
+        </span>
+        <h3>
+          <span class="lang en">Travel Book</span>
+          <span class="lang zh">旅行电子书</span>
+        </h3>
+        <p>
+          <span class="lang en">
+            An editorial design project focusing on layout and visual storytelling.
+          </span>
+          <span class="lang zh">
+            一个以版式设计与视觉叙事为核心的电子书项目。
+          </span>
+        </p>
+        <a href="travel book.html" class="project-link">
+          <span class="lang en">See Details</span>
+          <span class="lang zh">查看详情</span>
+        </a>
+      </div>
+    </article>
+
+    <article class="project-card portfolio-item branding">
+      <img src="images/project12.jpg" alt="Iceland Ebook">
+      <div class="project-info">
+        <span class="project-category">
+          <span class="lang en">Branding &amp; Visual Design</span>
+          <span class="lang zh">品牌与视觉设计</span>
+        </span>
+        <h3>
+          <span class="lang en">Iceland: Fire, Ice, and Life</span>
+          <span class="lang zh">冰岛电子书</span>
+        </h3>
+        <p>
+          <span class="lang en">
+            An interactive eBook combining multimedia elements and structured layout design.
+          </span>
+          <span class="lang zh">
+            一个融合多媒体内容与版式设计的互动电子书项目。
+          </span>
+        </p>
+        <a href="iceland.html" class="project-link">
+          <span class="lang en">See Details</span>
+          <span class="lang zh">查看详情</span>
+        </a>
+      </div>
+    </article>
+
+
+   <article class="project-card portfolio-item branding">
+      <img src="images/project15.jpg" alt="Environment Poster">
+      <div class="project-info">
+        <span class="project-category">
+          <span class="lang en">Branding &amp; Visual Design</span>
+          <span class="lang zh">品牌与视觉设计</span>
+        </span>
+        <h3>
+          <span class="lang en">Environmental Poster</span>
+          <span class="lang zh">环保主题海报</span>
+        </h3>
+        <p>
+          <span class="lang en">
+            A visual campaign poster promoting environmental awareness.
+          </span>
+          <span class="lang zh">
+            一个以环境保护为主题的视觉传播项目。
+          </span>
+        </p>
+        <a href="environment.html" class="project-link">
+          <span class="lang en">See Details</span>
+          <span class="lang zh">查看详情</span>
+        </a>
+      </div>
+    </article>
+
+
+
+    <article class="project-card portfolio-item branding">
+      <img src="images/project13.jpg" alt="Flower Poster">
+      <div class="project-info">
+        <span class="project-category">
+          <span class="lang en">Branding &amp; Visual Design</span>
+          <span class="lang zh">品牌与视觉设计</span>
+        </span>
+        <h3>
+          <span class="lang en">Flower Shop Poster</span>
+          <span class="lang zh">花店海报设计</span>
+        </h3>
+        <p>
+          <span class="lang en">
+            A poster design project focusing on typography and visual aesthetics.
+          </span>
+          <span class="lang zh">
+            一个以字体设计与视觉表现为核心的海报项目。
+          </span>
+        </p>
+        <a href="flower shop.html" class="project-link">
+          <span class="lang en">See Details</span>
+          <span class="lang zh">查看详情</span>
+        </a>
+      </div>
+    </article>
+
+<!-- Audio & Sound -->
+
+
+<!-- Someone Likes You -->
+<article class="project-card portfolio-item media">
+  <img
+    src="images/someone-likes-you-cover.jpg"
+    alt="Someone Likes You image and sound project"
+    loading="lazy"
+  >
+
+  <div class="project-info">
+    <span class="project-category">
+      <span class="lang en">Image &amp; Sound</span>
+      <span class="lang zh">影像与声音</span>
+    </span>
+
+    <h3>
+      <span class="lang en">Someone Likes You</span>
+      <span class="lang zh">有人爱着你</span>
+    </h3>
+
+    <p>
+      <span class="lang en">
+        A playful visual story about a toy dog’s Valentine’s Day
+        adventure to surprise its owner with a rose and a pull-tab ring.
+      </span>
+      <span class="lang zh">
+        一只玩偶小狗在情人节独自出门，
+        带回玫瑰与易拉罐环戒指，为主人准备惊喜的温馨影像故事。
+      </span>
+    </p>
+
+    <a href="someone-likes-you.html" class="project-link">
+      <span class="lang en">See Details</span>
+      <span class="lang zh">查看详情</span>
+    </a>
+  </div>
+</article>
+
+
+<!-- Rebirth -->
+<article class="project-card portfolio-item media">
+  <img
+    src="images/rebirth-cover.jpg"
+    alt="Rebirth: Becoming the Villain in Grimm’s Fairy Tales short film"
+    loading="lazy"
+  >
+
+  <div class="project-info">
+    <span class="project-category">
+      <span class="lang en">Image &amp; Sound</span>
+      <span class="lang zh">影像与声音</span>
+    </span>
+
+    <h3>
+      <span class="lang en">
+        Rebirth: Becoming the Villain in Grimm’s Fairy Tales
+      </span>
+      <span class="lang zh">重生：在格林童话当反派</span>
+    </h3>
+
+    <p>
+      <span class="lang en">
+        A fantasy short film reimagining Snow White,
+        following a young woman’s journey from appearance
+        anxiety to body acceptance and inner beauty.
+      </span>
+      <span class="lang zh">
+        一部改编白雪公主故事的奇幻短片，
+        讲述女主从容貌与身材焦虑中醒悟，
+        学会接纳自己、重新理解美的旅程。
+      </span>
+    </p>
+
+    <a href="rebirth.html" class="project-link">
+      <span class="lang en">See Details</span>
+      <span class="lang zh">查看详情</span>
+    </a>
+  </div>
+</article>
+
+
+
+<article class="project-card portfolio-item media">
+  <img
+    src="images/listening-by-the-lake-cover.jpg"
+    alt="Listening by the Lake audio storytelling project"
+    loading="lazy"
+  >
+
+  <div class="project-info">
+    <span class="project-category">
+      <span class="lang en">Audio &amp; Sound</span>
+      <span class="lang zh">音频 / 声音创作</span>
+    </span>
+
+    <h3>
+      <span class="lang en">Listening by the Lake: An Audio Essay</span>
+      <span class="lang zh">湖畔聆听：音频随笔</span>
+    </h3>
+
+
+  <p>
+  <span class="lang en">
+    An audio essay combining English narration and field recordings
+    to explore sound, attention, and everyday environments.
+  </span>
+  <span class="lang zh">
+    结合英文旁白与实地录音，探索声音、注意力与日常环境的关系。
+  </span>
+</p>
+
+    <a href="lake.html" class="project-link">
+      <span class="lang en">See Details</span>
+      <span class="lang zh">查看详情</span>
+    </a>
+  </div>
+</article>
+ 
+
+  </div>
+</section>
+
+    <!-- Footer -->
+ <footer class="site-footer" id="contact">
+  <div class="footer-container">
+
+    <!-- 左 -->
+    <div class="footer-left">
+      <h3>
+  <span class="lang en">Yijing Wu</span>
+  <span class="lang zh">吴依婧</span>
+</h3>
+      <p>
+  <span class="lang en">
+    Bringing together insights, content, and design to communicate brand value.
+  </span>
+  <span class="lang zh">
+    结合洞察、内容与设计，传递品牌价值。
+  </span>
+</p>
+    </div>
+
+    <!-- 中 -->
+    <div class="footer-center">
+        <a href="index.html">
+          <span class="lang en">Home</span>
+          <span class="lang zh">首页</span>
+        </a>
+         <a href="cv.html">
+            <span class="lang en">CV</span>
+            <span class="lang zh">简历</span>
+          </a>
+        <a href="portfolio.html">
+            <span class="lang en">Portfolio</span>
+            <span class="lang zh">作品集</span>
+          </a>
+        <a href="research">
+            <span class="lang en">Academic Research</span>
+            <span class="lang zh">学术研究</span>
+        </a>
+        <a href="photography.html">
+    <span class="lang en">Photography</span>
+    <span class="lang zh">摄影作品</span>
+  </a>
+    </div>
+
+    <!-- 右 -->
+    <div class="footer-right">
+      <p>Email: <a href="mailto:wuyijing517a@gmail.com">wuyijing517a@gmail.com</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/yijing-wu-2368a92bb" target="_blank">linkedin.com/in/yijing-wu-2368a92bb</a></p>
+      <p>Phone No.: 
+        <a href="tel:+85263675546">+852 6367 5546</a> | 
+        <a href="tel:+8613394053233">+86 133 9405 3233</a>
+      </p>
+
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 Yijing Wu. All Rights Reserved.</p>
+  </div>
+</footer>
+
+  </div>
+
+  <script>
+  const navToggle = document.getElementById("navToggle");
+  const siteNav = document.getElementById("siteNav");
+  const toggleBtn = document.getElementById("lang-toggle");
+
+  navToggle.addEventListener("click", () => {
+    siteNav.classList.toggle("active");
+  });
+
+  function setLanguage(lang) {
+    if (lang === "zh") {
+      document.body.classList.add("zh-mode");
+      toggleBtn.textContent = "EN";
+      document.documentElement.lang = "zh-CN";
+      localStorage.setItem("language", "zh");
+    } else {
+      document.body.classList.remove("zh-mode");
+      toggleBtn.textContent = "中文";
+      document.documentElement.lang = "en";
+      localStorage.setItem("language", "en");
+    }
+  }
+
+  const savedLang = localStorage.getItem("language") || "en";
+  setLanguage(savedLang);
+
+  toggleBtn.addEventListener("click", () => {
+    const currentLang = document.body.classList.contains("zh-mode") ? "zh" : "en";
+    setLanguage(currentLang === "zh" ? "en" : "zh");
+  });
+
+  const filterButtons = document.querySelectorAll(".filter-btn");
+  const portfolioItems = document.querySelectorAll(".portfolio-item");
+
+  filterButtons.forEach(button => {
+    button.addEventListener("click", () => {
+      const filterValue = button.dataset.filter;
+
+      filterButtons.forEach(btn => btn.classList.remove("active"));
+      button.classList.add("active");
+
+      portfolioItems.forEach(item => {
+        if (filterValue === "all" || item.classList.contains(filterValue)) {
+          item.style.display = "";
+        } else {
+          item.style.display = "none";
+        }
+      });
+    });
+  });
+</script>
+</body>
+</html>

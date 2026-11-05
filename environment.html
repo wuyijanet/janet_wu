@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yijing Wu | Let's Save The World Together</title>
+  <link rel="stylesheet" href="css/cuppia_style.css" />
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  />
+</head>
+<body>
+  <div class="page-wrapper">
+
+    <!-- Header -->
+    <header class="site-header">
+      <div class="logo">
+        <a href="index.html">
+          <span class="lang en">Yijing Wu</span>
+          <span class="lang zh">吴依婧</span>
+        </a>
+      </div>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        ☰
+      </button>
+
+      <nav class="site-nav" id="siteNav">
+        <a href="index.html">
+          <span class="lang en">Home</span>
+          <span class="lang zh">首页</span>
+        </a>
+        <a href="cv.html">
+          <span class="lang en">CV</span>
+          <span class="lang zh">简历</span>
+        </a>
+        <a href="portfolio.html">
+          <span class="lang en">Portfolio</span>
+          <span class="lang zh">作品集</span>
+        </a>
+        <a href="research.html">
+          <span class="lang en">Academic Research</span>
+          <span class="lang zh">学术研究</span>
+        </a>
+        <a href="photography.html">
+          <span class="lang en">Photography</span>
+          <span class="lang zh">摄影作品</span>
+        </a>
+
+        <button id="lang-toggle" class="lang-btn" type="button">中文</button>
+      </nav>
+    </header>
+
+    <!-- Project Content Section -->
+    <section class="momo-content-section">
+      <div class="momo-content-wrapper">
+
+        <!-- Intro -->
+        <div class="momo-info-block">
+          <p class="momo-category">Alternative Media / Interactive Design</p>
+          <h1 class="momo-project-title">Let's Save The World Together</h1>
+          <p class="momo-project-desc">
+             Let's Save The World Together is an interactive environmental protection poster designed to transform passive viewing into active participation. Through magnetic cards, viewers can flip environmental behaviors from harmful actions into eco-friendly choices, creating an engaging experience that connects personal decisions with environmental change.
+
+          </p>
+        </div>
+
+        <div class="back-btn-wrapper">
+          <a href="portfolio.html" class="back-btn">← Back to Portfolio</a>
+        </div>
+
+
+<div class="momo-card full-width media-card">
+  <h2>Interactive Poster Design</h2>
+
+  <p class="demo-text">
+    The poster includes two interactive sides. The front side presents environmentally harmful behaviors with a sad Earth, while the reverse side reveals eco-friendly actions with a smiling Earth. Magnetic cards allow viewers to physically interact with the poster and experience the transformation.
+  </p>
+
+<div class="poster-interactive">
+  <img
+    src="assets/poster-bg.jpg"
+    class="poster-bg"
+    alt="Environmental protection poster"
+  />
+
+  <img
+    src="assets/earth-unhappy.png"
+    class="earth"
+    id="earth"
+    alt="Earth"
+  />
+
+  <!-- 购物袋 -->
+  <button type="button" class="poster-flip-card icon1"
+    aria-label="Flip shopping bag card" aria-pressed="false">
+    <span class="poster-flip-inner">
+      <span class="poster-face poster-front">
+        <img src="assets/bag-bad.png" alt="Plastic bag" />
+      </span>
+      <span class="poster-face poster-back">
+        <img src="assets/bag-good.png" alt="Reusable bag" />
+      </span>
+    </span>
+  </button>
+
+  <!-- 交通 -->
+  <button type="button" class="poster-flip-card icon2"
+    aria-label="Flip transport card" aria-pressed="false">
+    <span class="poster-flip-inner">
+      <span class="poster-face poster-front">
+        <img src="assets/car-bad.png" alt="Car emissions" />
+      </span>
+      <span class="poster-face poster-back">
+        <img src="assets/car-good.png" alt="Sustainable transport" />
+      </span>
+    </span>
+  </button>
+
+  <!-- 一次性塑料 -->
+  <button type="button" class="poster-flip-card icon3"
+    aria-label="Flip plastics card" aria-pressed="false">
+    <span class="poster-flip-inner">
+      <span class="poster-face poster-front">
+        <img src="assets/plastics-bad.png" alt="Single-use plastics" />
+      </span>
+      <span class="poster-face poster-back">
+        <img src="assets/plastics-good.png" alt="Reusable alternatives" />
+      </span>
+    </span>
+  </button>
+
+  <!-- 树木 -->
+  <button type="button" class="poster-flip-card icon4"
+    aria-label="Flip tree card" aria-pressed="false">
+    <span class="poster-flip-inner">
+      <span class="poster-face poster-front">
+        <img src="assets/tree-bad.png" alt="Cutting trees" />
+      </span>
+      <span class="poster-face poster-back">
+        <img src="assets/tree-good.png" alt="Planting trees" />
+      </span>
+    </span>
+  </button>
+
+  <!-- 垃圾分类 -->
+  <button type="button" class="poster-flip-card icon5"
+    aria-label="Flip waste card" aria-pressed="false">
+    <span class="poster-flip-inner">
+      <span class="poster-face poster-front">
+        <img src="assets/waste-bad.png" alt="Unsorted waste" />
+      </span>
+      <span class="poster-face poster-back">
+        <img src="assets/waste-good.png" alt="Waste sorting" />
+      </span>
+    </span>
+  </button>
+
+  <!-- 节能 -->
+  <button type="button" class="poster-flip-card icon6"
+    aria-label="Flip energy card" aria-pressed="false">
+    <span class="poster-flip-inner">
+      <span class="poster-face poster-front">
+        <img src="assets/energy-bad.png" alt="Wasting energy" />
+      </span>
+      <span class="poster-face poster-back">
+        <img src="assets/energy-good.png" alt="Saving energy" />
+      </span>
+    </span>
+  </button>
+</div>
+
+  <p class="interaction-hint">
+    <span class="lang en">Click a card to flip it. Click again to turn it back.</span>
+    <span class="lang zh">点击图标翻面，再次点击即可翻回。</span>
+  </p>
+
+
+
+</div>
+</div>
+
+<div class="momo-card full-width media-card">
+  <h2>Project Presentation</h2>
+
+  <p class="demo-text">
+  This presentation explains the concept, interaction mechanism, target audience, and theoretical background of the interactive environmental poster. It explores how participatory design can transform environmental communication from passive awareness into active engagement.
+
+  </p>
+
+  <div class="embed-box large-embed">
+    <iframe
+      src="assets/environment-poster-ppt.pdf"
+      title="Interactive Environmental Poster Presentation"
+      loading="lazy">
+    </iframe>
+  </div>
+</div>
+
+
+
+<div class="momo-card full-width media-card">
+<h2>
+Research Paper
+</h2>
+<p class="demo-text">
+This paper discusses the design rationale, target audience, and role of the poster as alternative media. It examines how interactive design encourages participation and transforms abstract environmental issues into everyday actions.
+</p>
+<div class="embed-box large-embed">
+<iframe
+src="assets/environment-poster-paper.pdf"
+title="Research Paper"
+loading="lazy">
+</iframe>
+</div>
+</div>
+
+
+<!-- Tools + Project Details -->
+<div class="momo-grid-two">
+<div class="momo-card">
+<h2>
+Tools
+</h2>
+<ul>
+<li>Adobe Illustrator</li>
+<li>Canva</li>
+<li>Adobe Photoshop</li>
+</ul>
+</div>
+<div class="momo-card">
+<h2>
+Project Details
+</h2>
+<ul>
+<li>
+<strong>Type:</strong> Interactive Poster Design
+</li>
+<li>
+<strong>Role:</strong> Designer & Researcher
+</li>
+<li>
+<strong>Theme:</strong> Environmental Communication
+</li>
+<li>
+<strong>Focus:</strong> Alternative Media, Audience Participation, Visual Storytelling
+</li>
+</ul>
+</div>
+</div>
+
+<!-- Highlights -->
+<div class="momo-card full-width">
+
+
+<h2>
+Project Highlights
+</h2>
+
+
+<ul>
+
+
+<li>
+Designed an interactive environmental poster using magnetic card interactions.
+</li>
+
+
+<li>
+Created a two-sided visual system showing the transformation from harmful behaviors to eco-friendly actions.
+</li>
+
+
+<li>
+Used visual feedback including red crosses and green check marks to improve audience understanding.
+</li>
+
+
+<li>
+Designed for children, students, and families to encourage environmental awareness through participation.
+</li>
+
+
+<li>
+Explored alternative media approaches by turning viewers into active participants rather than passive audiences.
+</li>
+
+
+</ul>
+
+
+</div>
+
+<!-- Process -->
+<div class="momo-card full-width">
+
+
+<h2>
+Design Process
+</h2>
+
+
+
+<p>
+
+The project began by exploring how environmental messages could become more engaging through physical interaction. Instead of presenting environmental issues through traditional static posters, the design introduced magnetic cards that allow viewers to actively transform harmful behaviors into sustainable actions.
+
+</p>
+
+
+
+<ul>
+
+
+<li>
+Environmental issue research and audience analysis
+</li>
+
+
+<li>
+Concept development and interaction mechanism design
+</li>
+
+
+<li>
+Visual identity and poster layout design
+</li>
+
+
+<li>
+Interactive card system prototyping
+</li>
+
+
+<li>
+Reflection on alternative media and participatory communication
+</li>
+
+
+</ul>
+
+
+</div>
+      </div><!-- momo-content-wrapper -->
+    </section><!-- momo-content-section -->
+
+
+    <!-- Footer -->
+    <footer class="site-footer" id="contact">
+      <div class="footer-container">
+
+        <div class="footer-left">
+          <h3>
+            <span class="lang en">Yijing Wu</span>
+            <span class="lang zh">吴依婧</span>
+          </h3>
+          <p>
+  <span class="lang en">
+    Bringing together insights, content, and design to communicate brand value.
+  </span>
+  <span class="lang zh">
+    结合洞察、内容与设计，传递品牌价值。
+  </span>
+            </span>
+          </p>
+        </div>
+
+        <div class="footer-center">
+          <a href="index.html"><span class="lang en">Home</span><span class="lang zh">首页</span></a>
+          <a href="cv.html"><span class="lang en">CV</span><span class="lang zh">简历</span></a>
+          <a href="portfolio.html"><span class="lang en">Portfolio</span><span class="lang zh">作品集</span></a>
+          <a href="research.html"><span class="lang en">Academic Research</span><span class="lang zh">学术研究</span></a>
+          <a href="photography.html"><span class="lang en">Photography</span><span class="lang zh">摄影作品</span></a>
+        </div>
+
+        <div class="footer-right">
+          <p>Email: <a href="mailto:wuyijing517a@gmail.com">wuyijing517a@gmail.com</a></p>
+          <p>LinkedIn: <a href="https://www.linkedin.com/in/yijing-wu-2368a92bb" target="_blank">linkedin.com/in/yijing-wu-2368a92bb</a></p>
+          <p>
+            Phone No.:
+            <a href="tel:+85263675546">+852 6367 5546</a> |
+            <a href="tel:+8613394053233">+86 133 9405 3233</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Yijing Wu. All Rights Reserved.</p>
+      </div>
+    </footer>
+  </div>
+  
+
+  <script>
+    const navToggle = document.getElementById("navToggle");
+    const siteNav = document.getElementById("siteNav");
+    const toggleBtn = document.getElementById("lang-toggle");
+
+    navToggle.addEventListener("click", () => {
+      siteNav.classList.toggle("active");
+    });
+
+    function setLanguage(lang) {
+      if (lang === "zh") {
+        document.body.classList.add("zh-mode");
+        toggleBtn.textContent = "EN";
+        document.documentElement.lang = "zh-CN";
+        localStorage.setItem("language", "zh");
+      } else {
+        document.body.classList.remove("zh-mode");
+        toggleBtn.textContent = "中文";
+        document.documentElement.lang = "en";
+        localStorage.setItem("language", "en");
+      }
+    }
+
+    const savedLang = localStorage.getItem("language") || "en";
+    setLanguage(savedLang);
+
+    toggleBtn.addEventListener("click", () => {
+      const currentLang = document.body.classList.contains("zh-mode") ? "zh" : "en";
+      setLanguage(currentLang === "zh" ? "en" : "zh");
+    });
+
+    let currentSlide = 0;
+    const totalSlides = 3;
+    const sliderTrack = document.getElementById("sliderTrack");
+    const dots = document.querySelectorAll(".dot");
+
+    function updateSlider() {
+      sliderTrack.style.transform = `translateX(-${currentSlide * 100}%)`;
+      dots.forEach((dot, index) => {
+        dot.classList.toggle("active", index === currentSlide);
+      });
+    }
+
+    function moveSlide(direction) {
+      currentSlide += direction;
+      if (currentSlide < 0) currentSlide = totalSlides - 1;
+      if (currentSlide >= totalSlides) currentSlide = 0;
+      updateSlider();
+    }
+
+    function goToSlide(index) {
+      currentSlide = index;
+      updateSlider();
+    }
+
+const posterCards = document.querySelectorAll(
+  ".poster-interactive .poster-flip-card"
+);
+const earthImage = document.getElementById("earth");
+
+posterCards.forEach((card) => {
+  card.addEventListener("click", () => {
+    const flipped = card.classList.toggle("is-flipped");
+    card.setAttribute("aria-pressed", String(flipped));
+
+    // 六张全部翻到环保面后，地球变开心
+    const allGood = [...posterCards].every((item) =>
+      item.classList.contains("is-flipped")
+    );
+
+    if (earthImage) {
+      earthImage.src = allGood
+        ? "assets/earth-happy.png"
+        : "assets/earth-unhappy.png";
+
+      earthImage.alt = allGood ? "Happy Earth" : "Unhappy Earth";
+    }
+  });
+});
+
+  </script>
+</body>
+</html>
